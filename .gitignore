@@ -1,0 +1,21 @@
+# JetBrains folder
+.idea
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# website2/dist/
+# website2/dist/*.js
+# website2/dist/*.png
+# website2/dist/*.css
+
+# Optional npm cache directory
+.npm
+
+# dotenv environment variables file
+.env
+.env.test
