@@ -2,7 +2,6 @@ const path = require("path");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-// const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 const isDev = process.env.NODE_ENV === "development";
 const isProd = !isDev;
@@ -21,7 +20,6 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    // contentBase: path.resolve(__dirname, "dist"),
     open: true,
     hot: true,
     static: {
@@ -42,24 +40,12 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: filename("css"),
     }),
-    // new CopyWebpackPlugin({
-    //   patterns: [
-    //     {
-    //       from: path.resolve(__dirname, "src/assets"),
-    //       to: path.resolve(__dirname, "dist"),
-    //     },
-    //     // { from: "other", to: "public" },
-    //   ],
-    // }),
   ],
   module: {
     rules: [
       {
         test: /\.html$/i,
         loader: "html-loader",
-        // options: {
-        //   esModule: false,
-        // },
       },
       {
         test: /\.css$/i,
@@ -76,6 +62,10 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: "asset/resource",
       },
     ],
   },
