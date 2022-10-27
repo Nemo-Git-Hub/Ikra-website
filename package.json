@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Nemo-Git-Hub/website2#readme",
   "devDependencies": {
+    "autoprefixer": "^10.4.12",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
     "cross-env": "^7.0.3",
@@ -28,12 +29,17 @@
     "imagemin-webpack": "^5.1.1",
     "mini-css-extract-plugin": "^2.6.1",
     "node-sass": "^7.0.3",
+    "postcss-loader": "^7.0.1",
+    "sass": "^1.55.0",
     "sass-loader": "^13.1.0",
+    "style-loader": "^3.3.1",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.2",
     "reset-css": "^5.0.1"
   }
 }
