@@ -1,14 +1,6 @@
-// утворення корінних перемінних
-//  :root {
-//   --bs-primary: black;
-// }
-
 .btn-primary {
-  // якщо за дизайном при найменшому та найбальшому екранах розмір кнопки однаковий та незмінний, чи може це і є той самий випадок, коли можна задати жорсткі параметри height та width?
-
-  height: 70px;
   min-width: 300px;
-  max-width: 300px;
+  padding: 18px 0;
   --bs-btn-bg: #{$color-accent};
   --bs-btn-border-color: #{$color-accent};
 
@@ -20,8 +12,8 @@
 }
 
 .btn-outline-dark {
-  height: 70px;
-  width: 300px;
+  min-width: 300px;
+  padding: 18px 0;
   @include button-outline-variant(
     $font-color-black,
     $active-background: $color-accent-darknest,
