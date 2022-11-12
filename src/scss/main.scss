@@ -1,6 +1,14 @@
 // Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";
 
+@import "variables";
+@import "fonts";
+
+@import "overrides";
+@import "base";
+
+@import "components";
+
 .test {
   background-color: green;
   color: white;
@@ -8,4 +16,8 @@
   font-size: 30px;
   text-align: center;
   border-radius: 5px;
+  margin-top: 10px;
+  &-1 {
+    margin-top: 10px;
+  }
 }

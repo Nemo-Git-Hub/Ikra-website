@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Century";
+  src: url("../assets/fonts/CENTURY.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Medium"), local("Gilroy-Medium"),
+    url("../assets/fonts/Gilroy-Medium.woff2") format("woff2"),
+    url("../assets/fonts/Gilroy-Medium.woff") format("woff"),
+    url("../assets/fonts/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Regular"), local("Gilroy-Regular"),
+    url("../assets/fonts/Gilroy-Regular.woff2") format("woff2"),
+    url("../assets/fonts/Gilroy-Regular.woff") format("woff"),
+    url("../assets/fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Light"), local("Gilroy-Light"),
+    url("../assets/fonts/Gilroy-Light.woff2") format("woff2"),
+    url("../assets/fonts/Gilroy-Light.woff") format("woff"),
+    url("../assets/fonts/Gilroy-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+.century {
+  font-family: "Century";
+}
+.gilroy {
+  font-family: "Gilroy";
+}
+
+.text-1 {
+  @include font-size(4rem);
+}
+.text-2 {
+  @include font-size(2.25rem);
+}
+.text-3 {
+  @include font-size(2rem);
+}
+.text-4 {
+  @include font-size(1.5rem);
+}
+.text-5 {
+  @include font-size(1.25rem);
+}
+.text-6 {
+  @include font-size(1.125rem);
+}
+.text-7 {
+  @include font-size(0.875rem);
+}

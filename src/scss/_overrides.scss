@@ -1,0 +1,27 @@
+.btn-primary {
+  min-width: 300px;
+  padding: 18px 0;
+  --bs-btn-bg: #{$color-accent};
+  --bs-btn-border-color: #{$color-accent};
+
+  --bs-btn-hover-bg: #{shade-color($color-accent, 15%)};
+  --bs-btn-hover-border-color: #{shade-color($color-accent, 15%)};
+
+  --bs-btn-active-bg: #{shade-color($color-accent, 25%)};
+  --bs-btn-active-border-color: #{shade-color($color-accent, 25%)};
+}
+
+.btn-outline-dark {
+  min-width: 300px;
+  padding: 18px 0;
+  @include button-outline-variant(
+    $font-color-black,
+    $active-background: $color-accent-darknest,
+    $active-border: $color-accent-darknest
+  );
+  box-shadow: inset 0px 0px 0px 2px $font-color-black;
+
+  &:hover {
+    box-shadow: inset 0px 0px 0px 2px $color-accent-darknest;
+  }
+}
