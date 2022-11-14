@@ -8,16 +8,4 @@
 @import "base";
 
 @import "components";
-
-.test {
-  background-color: green;
-  color: white;
-  border: 3px solid red;
-  font-size: 30px;
-  text-align: center;
-  border-radius: 5px;
-  margin-top: 10px;
-  &-1 {
-    margin-top: 10px;
-  }
-}
+@import "sections/header";

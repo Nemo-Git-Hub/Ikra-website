@@ -17,3 +17,9 @@ dist
 # dotenv environment variables file
 .env
 .env.test
+
+# draft
+draft.txt
+draft.cpp
+draft.html
+draft.css

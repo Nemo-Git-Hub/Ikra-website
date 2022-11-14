@@ -10,46 +10,91 @@
     <link rel="stylesheet" type="text/css" href="src/scss/main.scss" />
   </head>
   <body>
-    <div class="test century">
-      <p class="century">Hello, world!<br /></p>
-      <p class="century">And hello peaple!</p>
-    </div>
-    <div class="test">
-      <div>
-        <p class="gilroy fw-semibold">Gilroy Medium (600)</p>
+    <header id="header-page" class="header-page">
+      <nav class="container-fluid navbar navbar-expand-lg">
+        <div class="container gilroy fw-light text-6">
+          <a class="navbar-brand col-4" href="#">
+            <img
+              class="img-logo-adaptiv"
+              src="src/assets/icons/logo.svg"
+              alt="Logo-company"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse col-3 mr-0"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Каталог</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Акції</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Доставка</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Відгуки</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">FAQ</a>
+              </li>
+            </ul>
+            <div class="nav-item d-flex">
+              <img src="src/assets/icons/carbon_phone.svg" alt="carbon_phone" />
+              <a class="nav-link active phone-number" href="#"
+                >+38 (096) 565 23 23</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="first-page container">
+        <div class="first-page__text">
+          <h2 class="text-3 text-uppercase">Отримайте насолоду</h2>
+          <h1 class="text-1 text-uppercase">від смачної чорної</h1>
+          <h1 class="text-1 text-uppercase">
+            та <span class="accent">червоної</span> ікри
+          </h1>
+          <p class="text-4 gilroy fw-semibold">
+            Свіжа ікра преміум класу від перевірених постачальників
+          </p>
+        </div>
+        <div class="first-page__btn-action d-flex justify-content-between">
+          <div class="first-page__btn">
+            <button type="button" class="btn btn-primary text-5">
+              Замовити по Акції
+            </button>
+            <button
+              class="first-page__btn--catalog btn btn-outline-dark text-5"
+            >
+              Перейти до Каталогу
+            </button>
+          </div>
+          <div class="first-page__action text-center">
+            <h3 class="first-page__action--title text-uppercase text-4">
+              Акція
+            </h3>
+            <h1 class="first-page__action--title text-1 accent">1+1=3</h1>
+            <p class="first-page__action--note text-6 gilroy fw-light">
+              *Акція діє на будь-яку вагу та асортимент магазину
+            </p>
+          </div>
+        </div>
       </div>
-      <div>
-        <p class="gilroy">Gilroy Regular (400)</p>
-      </div>
-      <div>
-        <p class="gilroy fw-light">Gilroy Light (300)</p>
-      </div>
-    </div>
-
-    <div class="test-1">
-      <button type="button" class="btn btn-primary text-5">
-        Замовити по Акції
-      </button>
-    </div>
-
-    <div class="test-1">
-      <button type="button" class="btn btn-primary text-5">
-        Хочу отримати пропозицію
-      </button>
-    </div>
-    <div class="test-1">
-      <button class="btn btn-outline-dark text-5">Перейти до Каталогу</button>
-    </div>
-
-    <div>
-      <p class="text-1">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quam nisi
-        nulla neque ipsa non odio incidunt ratione nesciunt repellendus corporis
-        nobis assumenda corrupti illum, amet voluptatem explicabo sequi quae.
-      </p>
-    </div>
-    <!-- Test img -->
-    <!-- <img src="src/assets/img/1х1.png" alt="image" /> -->
+    </header>
 
     <script src="src/js/index.js"></script>
   </body>

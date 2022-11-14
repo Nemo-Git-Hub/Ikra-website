@@ -1,0 +1,56 @@
+// Adaptive Logo img
+
+@mixin adaptiv-img($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $addMobSize: $addSize + $addSize * 0.7;
+  @media (max-width: 992px) {
+    width: calc(
+      #{$mobSize + px} + #{$addMobSize} * ((100vw - 375px) / #{$maxWidth})
+    );
+  }
+  @media (min-width: 992px) {
+    width: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+  }
+}
+
+.img-logo-adaptiv {
+  max-width: 100%;
+  height: auto;
+  @include adaptiv-img(155, 58);
+}
+
+.phone-number {
+  padding-left: 12px;
+}
+
+.accent {
+  color: $color-accent;
+}
+
+// .header-page {
+//   background: url("../../assets/img/front-view-black-red-caviar-with-toast-with-butter-plate-with-cup-coffee.jpg")
+//     top / cover no-repeat;
+// }
+
+.first-page {
+  &__btn-action {
+    margin-top: 50px;
+  }
+  &__text {
+    margin-top: 54px;
+  }
+  &__btn {
+    &--catalog {
+      margin-left: 57px;
+    }
+  }
+  &__action {
+    max-width: 300px;
+    background: linear-gradient(
+      108.7deg,
+      #ffffff 5.27%,
+      rgba(255, 255, 255, 0.51) 102.68%
+    );
+    border-radius: 10px;
+  }
+}
