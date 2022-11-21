@@ -13,18 +13,13 @@
 }
 
 .header-page {
-  background: url("../assets/img/front-view-black-red-caviar-with-toast-with-butter-plate-with-cup-coffee.jpg")
-    top / cover no-repeat;
+  background: url("../assets/img/first-page-bg.jpg") top / cover no-repeat;
 }
 
 .first-page {
   &__action {
     max-width: 300px;
-    background: linear-gradient(
-      108.7deg,
-      #ffffff 5.27%,
-      rgba(255, 255, 255, 0.51) 102.68%
-    );
+    background: $color-white-bg;
     border-radius: 10px;
   }
 }

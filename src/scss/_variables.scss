@@ -5,6 +5,11 @@ $color-accent: #ee4c1f;
 $color-accent-darknest: #ca3a12;
 $color-patent-background: #f4f4ff;
 $color-block-background: #fafafd;
+$color-white-bg: linear-gradient(
+  109deg,
+  #ffffff 5%,
+  rgba(255, 255, 255, 0.51) 103%
+);
 $white: #fff;
 
 $maxWidth: 1440;
