@@ -13,7 +13,12 @@
 }
 
 .header-page {
-  background: url("../assets/img/first-page-bg.jpg") top / cover no-repeat;
+  background: url("../assets/img/first-page-bg.jpg") right / cover no-repeat;
+  // background: url("../assets/img/first-page-bg.jpg");
+  // background-position: right 65%;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  height: 100%;
 }
 
 .first-page {
