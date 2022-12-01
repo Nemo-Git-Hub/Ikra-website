@@ -13,11 +13,11 @@
 }
 
 .header-page {
-  background: url("../assets/img/first-page-bg.jpg") right / cover no-repeat;
-  // background: url("../assets/img/first-page-bg.jpg");
-  // background-position: right 65%;
-  // background-size: cover;
-  // background-repeat: no-repeat;
+  // background: url("../assets/img/first-page-bg.jpg") right / cover no-repeat;
+  background: url("../assets/img/first-page-bg.jpg");
+  background-position: right 65%;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 100%;
 
   // TODO: add media query for mobile
@@ -31,5 +31,17 @@
     max-width: 300px;
     background: $color-white-bg;
     border-radius: 10px;
+  }
+}
+
+// .group-buttons {
+//   display: flex;
+//   flex-direction: column-reverse;
+//   align-items: end;
+// }
+
+@media screen and (max-width: 576px) {
+  .header-page {
+    background: url(../assets/img/first-page-bg-xs.png) bottom / cover no-repeat;
   }
 }
