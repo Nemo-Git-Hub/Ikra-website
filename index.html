@@ -1,56 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Справжня ікра</title>
 
-    <link rel="stylesheet" href="node_modules/reset-css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="src/scss/main.scss" />
-  </head>
-  <body>
-    <div class="test century">
-      <p class="century">Hello, world!<br /></p>
-      <p class="century">And hello peaple!</p>
-    </div>
-    <div class="test">
-      <div>
-        <p class="gilroy fw-semibold">Gilroy Medium (600)</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Справжня ікра</title>
+
+  <link rel="stylesheet" type="text/css" href="src/scss/main.scss" />
+</head>
+
+<body>
+  <header id="header-page" class="header-page">
+    <nav class="container-fluid navbar navbar-expand-lg">
+      <div class="container gilroy fw-light text-6">
+        <a class="navbar-brand col-4" href="#">
+          <img class="img-logo-adaptiv" src="src/assets/icons/logo.svg" alt="Logo-company" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse col-3 mr-0" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Каталог</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Акції</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Доставка</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Відгуки</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">FAQ</a>
+            </li>
+          </ul>
+          <div class="nav-item d-flex">
+            <img src="src/assets/icons/carbon_phone.svg" alt="carbon_phone" />
+            <a class="nav-link active phone-number" href="#">+38 (096) 565 23 23</a>
+          </div>
+        </div>
       </div>
-      <div>
-        <p class="gilroy">Gilroy Regular (400)</p>
+    </nav>
+    <div class="container h-80vh">
+      <div class="row mt-5 h-80vh">
+        <div class="col-12">
+          <div class="mt-5">
+            <h2 class="text-4 text-uppercase">Отримайте насолоду</h2>
+            <h1 class="text-1 text-uppercase">від смачної чорної</h1>
+            <h1 class="text-1 text-uppercase">
+              та <span class="color-accent">червоної</span> ікри
+            </h1>
+            <p class="text-4 gilroy fw-semibold">
+              Свіжа ікра преміум класу від перевірених постачальників
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-8 col-xl-9 order-3 order-md-2">
+          <div class="d-grid d-md-flex flex-wrap align-items-end gap-3 group-buttons">
+            <button type="button" class="btn btn-primary text-5">
+              Замовити по Акції
+            </button>
+            <button class="btn btn-outline-dark text-5">
+              Перейти до Каталогу
+            </button>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 order-2 order-md-3">
+          <div class="rounded-3 text-center first-page__action">
+            <div class="d-flex flex-row flex-md-column justify-content-center gap-3 gap-md-0">
+              <h3 class="align-items-center text-uppercase text-4 mt-3">Акція</h3>
+              <h1 class="text-1 color-accent">1+1=3</h1>
+            </div>
+            <p class="text-6 gilroy fw-light pb-1">
+              *Акція діє на будь-яку вагу та асортимент магазину
+            </p>
+          </div>
+        </div>
+        <div class="flex-grow-1"></div>
+        <div class="col-12 order-4">
+          <div class="row d-none d-md-flex flex-row justify-content-start gap-4">
+            <div class="col col-md-3 col-xl-2">
+              <div class="d-flex rounded-3 first-page__action ps-0">
+                <div class="d-flex align-items-center">
+                  <img src="src/assets/img/red-caviar.png" alt="red-caviar">
+                  <div class="">
+                    <p class="gilroy fw-light text-6 mb-0">Ікра лосося</p>
+                    <p class="gilroy fw-semibold text-4 mb-0">130 грн</p>
+                    <p class="gilroy text-7 mb-0">за 120 г</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-md-3 col-xl-2">
+              <div class=" d-flex rounded-3 first-page__action ps-0 align-items-center">
+                <img src="src/assets/img/orange-caviar.png" alt="orange-caviar">
+                <div class="">
+                  <p class="gilroy fw-light text-6 mb-0">Ікра кети</p>
+                  <p class="gilroy fw-semibold text-4 mb-0">130 грн</p>
+                  <p class="gilroy text-7 mb-0">за 120 г</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-md-3 col-xl-2">
+              <div class=" d-flex rounded-3 first-page__action ps-0 align-items-center">
+                <img src="src/assets/img/black-caviar.png" alt="black-caviar">
+                <div class="">
+                  <p class="gilroy fw-light text-6 mb-0">Ікра веслоноса</p>
+                  <p class="gilroy fw-semibold text-4 mb-0">140 грн</p>
+                  <p class="gilroy text-7 mb-0">за 120 г</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-md-3 col-xl-2">
+              <div class=" d-flex rounded-3 first-page__action ps-0 align-items-center">
+                <img src="src/assets/img/brown-caviar.png" alt="brown-caviar">
+                <div class="">
+                  <p class="gilroy fw-light text-6 mb-0">Ікра горбуші</p>
+                  <p class="gilroy fw-semibold text-4 mb-0">120 грн</p>
+                  <p class="gilroy text-7 mb-0">за 120 г</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        <p class="gilroy fw-light">Gilroy Light (300)</p>
-      </div>
-    </div>
 
-    <div class="test-1">
-      <button type="button" class="btn btn-primary text-5">
-        Замовити по Акції
-      </button>
-    </div>
 
-    <div class="test-1">
-      <button type="button" class="btn btn-primary text-5">
-        Хочу отримати пропозицію
-      </button>
-    </div>
-    <div class="test-1">
-      <button class="btn btn-outline-dark text-5">Перейти до Каталогу</button>
-    </div>
+  </header>
 
-    <div>
-      <p class="text-1">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quam nisi
-        nulla neque ipsa non odio incidunt ratione nesciunt repellendus corporis
-        nobis assumenda corrupti illum, amet voluptatem explicabo sequi quae.
-      </p>
-    </div>
-    <!-- Test img -->
-    <!-- <img src="src/assets/img/1х1.png" alt="image" /> -->
 
-    <script src="src/js/index.js"></script>
-  </body>
+
+  <script src="src/js/index.js"></script>
+</body>
+
 </html>

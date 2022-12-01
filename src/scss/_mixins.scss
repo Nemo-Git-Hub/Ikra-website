@@ -1,0 +1,15 @@
+@mixin adaptiv-img($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $addMobSize: $addSize + $addSize * 0.7;
+  @include media-breakpoint-down(lg) {
+    width: calc(
+      #{$mobSize + px} + #{$addMobSize} *
+        ((100vw - 375px) / #{$max-width-adaptive-images})
+    );
+  }
+  @include media-breakpoint-up(lg) {
+    width: calc(
+      #{$mobSize + px} + #{$addSize} * (100vw / #{$max-width-adaptive-images})
+    );
+  }
+}

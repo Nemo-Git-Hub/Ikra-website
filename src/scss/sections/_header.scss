@@ -1,0 +1,31 @@
+.img-logo-adaptiv {
+  max-width: 100%;
+  height: auto;
+  @include adaptiv-img(155, 58);
+}
+
+.phone-number {
+  padding-left: 12px;
+}
+
+.header-page {
+  background-image: url("../assets/img/first-page-bg.jpg");
+  background-position: right 65%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.first-page {
+  &__action {
+    max-width: 300px;
+    background: $gradient-white;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .header-page {
+    background-image: url(../assets/img/first-page-bg-xs.png);
+    background-position: bottom;
+  }
+}

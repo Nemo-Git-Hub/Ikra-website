@@ -2,6 +2,13 @@ html,
 body {
   height: 100%;
   font-family: "Century";
-  // font-weight: 400;кошка жрет как невменяемая.
   color: $font-color-black;
+}
+
+.h-80vh {
+  height: 80vh;
+}
+
+.color-accent {
+  color: $color-accent;
 }

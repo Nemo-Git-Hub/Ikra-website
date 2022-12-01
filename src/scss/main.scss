@@ -1,23 +1,12 @@
 // Import all of Bootstrap's CSS
+@import "../../node_modules/reset-css/reset.css";
 @import "~bootstrap/scss/bootstrap";
 
 @import "variables";
+@import "mixins";
 @import "fonts";
 
 @import "overrides";
 @import "base";
 
-@import "components";
-
-.test {
-  background-color: green;
-  color: white;
-  border: 3px solid red;
-  font-size: 30px;
-  text-align: center;
-  border-radius: 5px;
-  margin-top: 10px;
-  &-1 {
-    margin-top: 10px;
-  }
-}
+@import "sections/header";
