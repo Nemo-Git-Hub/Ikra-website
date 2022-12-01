@@ -1,12 +1,12 @@
 @mixin adaptiv-img($pcSize, $mobSize) {
   $addSize: $pcSize - $mobSize;
   $addMobSize: $addSize + $addSize * 0.7;
-  @media (max-width: 992px) {
+  @include media-breakpoint-down(lg) {
     width: calc(
       #{$mobSize + px} + #{$addMobSize} * ((100vw - 375px) / #{$maxWidth})
     );
   }
-  @media (min-width: 992px) {
+  @include media-breakpoint-up(lg) {
     width: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
   }
 }

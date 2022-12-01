@@ -8,10 +8,6 @@
   padding-left: 12px;
 }
 
-.color-accent {
-  color: $color-accent;
-}
-
 .header-page {
   background: url("../assets/img/first-page-bg.jpg");
   background-position: right 65%;
@@ -23,7 +19,7 @@
 .first-page {
   &__action {
     max-width: 300px;
-    background: $color-white-bg;
+    background: $gradient-white;
   }
 }
 
@@ -32,7 +28,5 @@
     background: url(../assets/img/first-page-bg-xs.png);
     background-position: bottom;
     background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
   }
 }
