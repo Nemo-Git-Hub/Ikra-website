@@ -42,6 +42,9 @@
   font-family: "Gilroy";
 }
 
+.text-0 {
+  @include font-size(6rem);
+}
 .text-1 {
   @include font-size(4rem);
 }

@@ -1,7 +1,6 @@
 // BUTTONS
 .btn-primary {
-  min-width: 300px;
-  padding: 18px 0;
+  padding: 18px 24px;
   --bs-btn-bg: #{$color-accent};
   --bs-btn-border-color: #{$color-accent};
 
@@ -13,8 +12,7 @@
 }
 
 .btn-outline-dark {
-  min-width: 300px;
-  padding: 18px 0;
+  padding: 18px 24px;
   @include button-outline-variant(
     $font-color-black,
     $active-background: $color-accent-darknest,
