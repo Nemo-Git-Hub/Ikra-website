@@ -1,0 +1,11 @@
+.out-production {
+  padding-top: 110px;
+  background: url(../assets/icons/bg-line.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  &-block {
+    @include bs-card;
+    max-width: 300px;
+    background-color: gray;
+  }
+}
