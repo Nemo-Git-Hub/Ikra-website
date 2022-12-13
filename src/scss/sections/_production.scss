@@ -5,7 +5,11 @@
   background-repeat: no-repeat;
   &-block {
     @include bs-card;
-    max-width: 300px;
-    background-color: gray;
+    padding: 4px 36px 44px 36px;
+    &-weight {
+      padding: 11px 23px;
+      background-color: $background-color-weight;
+      border-radius: 10px;
+    }
   }
 }
