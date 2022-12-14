@@ -1,0 +1,16 @@
+.out-production {
+  padding-top: 110px;
+  padding-bottom: 86px;
+  background: url(../assets/icons/bg-line.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  &-block {
+    @include bs-card;
+    padding: 4px 36px 44px 36px;
+    &-weight {
+      padding: 11px 23px;
+      background-color: $background-color-weight;
+      border-radius: 10px;
+    }
+  }
+}
