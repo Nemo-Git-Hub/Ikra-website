@@ -3,7 +3,6 @@
   padding-bottom: 100px;
 
   &-block {
-    // @include bs-card;
     @include media-breakpoint-down(lg) {
       max-width: 330px;
       display: flex;
@@ -12,26 +11,10 @@
   }
 
   &-img {
-    position: relative;
-    height: 100%;
-    background: url(../../src/assets/img/action-bg-img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background-image: linear-gradient(
-        to right,
-        #ffffff 4%,
-        rgba(255, 255, 255, 0) 96%
-      );
-    }
+    @include bg-img(
+      "../../src/assets/img/action-bg-img.jpg",
+      $filter: linear-gradient(to right, #ffffff 4%, rgba(255, 255, 255, 0) 96%)
+    );
   }
 
   &-mobile-card {
@@ -48,7 +31,7 @@
   }
 }
 
-@media screen and (min-width: 992px) {
+@include media-breakpoint-up(lg) {
   .action-page {
     &-block {
       @include bs-card;
@@ -56,7 +39,7 @@
   }
 }
 
-@media screen and (max-width: 991px) {
+@include media-breakpoint-down(lg) {
   .action-page {
     position: relative;
     padding-top: 155px;
