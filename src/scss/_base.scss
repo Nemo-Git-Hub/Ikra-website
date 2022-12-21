@@ -6,7 +6,7 @@ body {
 }
 
 .h-80vh {
-  height: 70vh;
+  height: 80vh;
 }
 
 .color-accent {
@@ -14,5 +14,5 @@ body {
 }
 
 .text-0 {
-  font-size: 6rem;
+  @include font-size(6rem);
 }
