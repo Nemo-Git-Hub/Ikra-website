@@ -12,7 +12,3 @@ body {
 .color-accent {
   color: $color-accent;
 }
-
-.text-0 {
-  @include font-size(6rem);
-}

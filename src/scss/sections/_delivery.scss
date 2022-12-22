@@ -1,0 +1,12 @@
+.delivery {
+  background-image: url(../assets/icons/bg-line.svg);
+  &-title {
+    margin-top: 96px;
+  }
+  &-block {
+    padding: 35px 80px;
+    margin-left: 15px;
+    margin-right: 60px;
+    @include bs-card;
+  }
+}
