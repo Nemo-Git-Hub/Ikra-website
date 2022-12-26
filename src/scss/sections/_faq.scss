@@ -7,15 +7,3 @@
     border-radius: 10px;
   }
 }
-
-.accordion {
-  --bs-accordion-btn-icon: url(../assets/icons/akar-icons-plus.svg);
-  --bs-accordion-btn-active-icon: url(../assets/icons/akar-icons-minus.svg);
-  --bs-accordion-border-width: 0px;
-}
-
-.accordion-button:not(.collapsed) {
-  color: $font-color-black;
-  background-color: $background-color-white-clean;
-  box-shadow: none;
-}
