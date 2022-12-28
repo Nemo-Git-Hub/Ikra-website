@@ -1,12 +1,16 @@
 .delivery {
   background-image: url(../assets/icons/bg-line.svg);
-  &-title {
-    margin-top: 96px;
-  }
+
   &-block {
-    padding: 35px 80px;
-    margin-left: 15px;
-    margin-right: 60px;
+    padding: 35px 80px 70px 80px;
     @include bs-card;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .delivery {
+    &-block {
+      padding: 36px 16px;
+    }
   }
 }
