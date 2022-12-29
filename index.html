@@ -675,7 +675,7 @@
       </div>
     </section>
 
-    <section id="review" class="review">
+    <!-- <section id="review" class="review">
       <div class="container">
         <p class="text-2 text-uppercase text-center">відгуки наших покупців</p>
         <div class="swiper mySwiper">
@@ -701,7 +701,7 @@
           <div class="swiper-pagination"></div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section id="faq" class="faq">
       <div class="container">
@@ -846,8 +846,8 @@
         </div>
       </div>
     </section>
-    
-        <section class="fotos">
+
+    <section class="fotos">
       <div class="container">
         <p class="title text-2 text-uppercase text-center">
           Фото нашого продукту
@@ -898,10 +898,131 @@
               alt="image-foto"
               class="fotos-img img-fluid"
             />
-                      </div>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Open modal
+    </button>
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header flex-column">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <p
+              class="modal-title fs-5 text-2 text-center text-uppercase"
+              id="exampleModalLabel"
+            >
+              щоб зробити замовлення
+            </p>
+          </div>
+
+          <div class="modal-body gilroy fw-light">
+            <p class="text-center">
+              заповніть всі поля і наш консультант з вами зв’яжеться
+            </p>
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Ваше ім’я"
+              aria-label="Ваше ім’я"
+            />
+
+            <div class="form-control mt-2">
+              <!-- do not to see flag-ukraine -->
+              <div class="dropdown">
+                <button
+                  class="btn btn-outline dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="true"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="src/assets/icons/flag-ukraine.svg"
+                    alt="flag-ukraine"
+                  />
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img
+                        src="src/assets/icons/flag-ukraine.svg"
+                        alt="flag-ukraine"
+                      />
+                    </a>
+                  </li>
+                </ul>
+                <input
+                  class="modal-phone"
+                  type="number"
+                  placeholder="+380 (99) 999-99-99"
+                  aria-label="+380 (99) 999-99-99"
+                />
+              </div>
+            </div>
+            <p class="ms-3 mt-3">Вид ікри</p>
+            <div class="dropdown">
+              <button
+                class="btn btn-outline dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="true"
+                aria-expanded="false"
+              >
+                Ікра горбуші
+              </button>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#"> Ікра горбуші </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"> Ікра лосося </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"> Ікра кети </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"> Ікра веслоноса </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="src/js/index.js"></script>
   </body>

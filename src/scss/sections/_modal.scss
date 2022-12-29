@@ -1,0 +1,14 @@
+.modal {
+  &-phone {
+    border: none;
+  }
+  &-phone::after {
+    border: none;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .modal-content {
+    width: 564px;
+  }
+}
