@@ -1,0 +1,26 @@
+.footer {
+  padding-top: 32px;
+  background-color: $font-color-black;
+  color: $background-color-white-clean;
+  &-contacts-title {
+    color: $color-accent;
+  }
+  &-btn {
+    width: 100%;
+    padding: 8px;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .footer {
+    &-form {
+      margin-top: 52px;
+    }
+    &-socium {
+      margin-top: 45px;
+    }
+    &-right {
+      margin-top: 53px;
+    }
+  }
+}
