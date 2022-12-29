@@ -1,0 +1,57 @@
+.footer {
+  padding-top: 32px;
+  background-color: $font-color-black;
+  color: $background-color-white-clean;
+  &-contacts-title {
+    color: $color-accent;
+  }
+  &-btn {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .form-control {
+    &::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: var(--bs-white);
+      opacity: 1; /* Firefox */
+    }
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: var(--bs-white);
+    }
+    &::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: var(--bs-white);
+    }
+    &:focus {
+      &::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: var(--bs-black);
+        opacity: 1; /* Firefox */
+      }
+      &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: var(--bs-black);
+      }
+      &::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: var(--bs-black);
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .footer {
+    &-form {
+      margin-top: 52px;
+    }
+    &-socium {
+      margin-top: 45px;
+    }
+    &-right {
+      margin-top: 53px;
+    }
+  }
+}

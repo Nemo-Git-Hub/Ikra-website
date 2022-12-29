@@ -637,43 +637,53 @@
     </section>
 
     <section id="delivery" class="delivery">
-      <div class="container d-flex ps-0">
-        <img
-          src="src/assets/img/delivery-section-img.jpg"
-          alt="delivery-section-image"
-          class="d-none d-xl-flex w-50"
-        />
-        <div class="delivery-title container d-flex flex-column">
-          <p class="text-2 text-uppercase text-center">умови доставки</p>
-          <div class="delivery-block">
-            <img src="src/assets/icons/payment.svg" alt="payment-icon" />
-            <p class="text-uppercase text-5 mt-4">Як замовити та сплатити</p>
-            <p class="gilroy fw-light">
-              Виберете необхідний вам товар та оформіть заявку на сайті. Після
-              цього з вами зв'яжеться менеджер для підтвердження замовлення.
-            </p>
-            <p class="gilroy fw-semibold text-4">
-              Ваше замовлення ви можете сплатити 2 способами:
-            </p>
-            <ol class="list-group-numbered gilroy fw-semibold text-5">
-              <li class="list-group-item">Накладеним платежем</li>
-              <li class="list-group-item">Передплата на картку Приватбанку</li>
-            </ol>
-          </div>
-          <div class="delivery-block mt-4">
-            <img
-              src="src/assets/icons/delivery-tracking.svg"
-              alt="delivery-tracking-icon"
+      <div class="container">
+        <div class="row ps-0">
+          <img
+            src="src/assets/img/delivery-section-img.jpg"
+            alt="delivery-section-image"
+            class="col-xl-6 d-none d-xl-block img-fluid"
+          />
+
+          <div class="col-12 col-xl-6 container d-flex flex-column mt-5">
+            <p class="text-2 text-uppercase text-center">умови доставки</p>
+            <div class="delivery-block text-center text-lg-start">
+              <img src="src/assets/icons/payment.svg" alt="payment-icon" />
+              <p class="text-uppercase text-5 mt-4">Як замовити та сплатити</p>
+              <p class="gilroy fw-light text-start">
+                Виберете необхідний вам товар та оформіть заявку на сайті. Після
+                цього з вами зв'яжеться менеджер для підтвердження замовлення.
+              </p>
+              <p class="gilroy fw-semibold text-4 text-start">
+                Ваше замовлення ви можете сплатити 2 способами:
+              </p>
+              <ol
+                class="list-group-numbered gilroy fw-semibold text-5 text-start"
+              >
+                <li class="list-group-item">Накладеним платежем</li>
+                <li class="list-group-item">
+                  Передплата на картку Приватбанку
+                </li>
+              </ol>
+            </div>
             />
-            <p class="text-uppercase text-5 mt-4">Які умови доставки</p>
-            <p class="gilroy fw-light">
-              Ми надсилаємо посилки по всій Україні. Доставка здійснюється Новою
-              поштою протягом 1-2 днів, на зручне для вас відділення
-            </p>
+            <div class="delivery-block text-center text-lg-start mt-4 mb-5">
+              <img
+                src="src/assets/icons/delivery-tracking.svg"
+                alt="delivery-tracking-icon"
+              />
+              <p class="text-uppercase text-5 mt-4">Які умови доставки</p>
+              <p class="gilroy fw-light text-start">
+                Ми надсилаємо посилки по всій Україні. Доставка здійснюється
+                Новою поштою протягом 1-2 днів, на зручне для вас відділення
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- section need to decommited after full compleat. Distorts page display.  -->
 
     <!-- <section id="review" class="review">
       <div class="container">
@@ -701,7 +711,8 @@
           <div class="swiper-pagination"></div>
         </div>
       </div>
-    </section> -->
+    </section>
+    -->
 
     <section id="faq" class="faq">
       <div class="container">
@@ -902,6 +913,79 @@
         </div>
       </div>
     </section>
+
+    <footer id="footer" class="footer container-fluid pb-4">
+      <div class="container-xxl gilroy">
+        <div class="row">
+          <div class="col d-none d-lg-block">
+            <img src="src/assets/icons/logo-footer.png" alt="logo" />
+            <p class="text-7 pt-3">
+              Якщо Ви справжній гурман, знаєтеся на смак справжню ікру і Вас
+              цікавить не тільки гарантована якість продукту, але й справжність
+              його походження, тоді Вам до нас!
+            </p>
+          </div>
+
+          <div class="col d-none d-lg-block fw-light">
+            <p class="footer-contacts-title fw-semibold">Контакти</p>
+            <p>м.Дніпро, вул. Глінки, 17-А</p>
+            <p>+38 (096) 565 23 23</p>
+            <p>пн-пт з 09:00 до 21:00</p>
+            <p>yourmail@gmail.com</p>
+          </div>
+
+          <div class="col footer-socium order-5 order-lg-4">
+            <p class="fw-light text-center text-lg-start">
+              Підписуйтесь на нас в соціальних мережах
+            </p>
+            <div class="d-flex text-center text-lg-start">
+              <a class="text-decoration-none" href="#">
+                <img src="src/assets/icons/icon-viber.svg" alt="icon-viber" />
+              </a>
+              <a class="text-decoration-none ms-2" href="#">
+                <img
+                  src="src/assets/icons/icon-telegram.svg"
+                  alt="icon-telegram"
+                />
+              </a>
+              <a class="text-decoration-none ms-2" href="#">
+                <img
+                  src="src/assets/icons/icon-instagram.svg"
+                  alt="icon-instagram"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 footer-form order-4 order-lg-5">
+            <p>Підпишіться на розсилку про наші акції та знижки</p>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control mt-4 ps-4"
+                id="exampleFormControlInput1"
+                placeholder="Ім’я"
+              />
+              <input
+                type="email"
+                class="form-control mt-2 ps-4"
+                id="exampleFormControlInput1"
+                placeholder="E-mail"
+              />
+              <button
+                type="button"
+                class="btn btn-primary footer-btn century text-5 mt-2"
+              >
+                Відправити
+              </button>
+            </div>
+          </div>
+        </div>
+        <p class="footer-right gilroy text-7 text-center mb-0">
+          Всі права захищені © 2022
+        </p>
+      </div>
+    </footer>
 
     <!-- Button trigger modal -->
     <button
