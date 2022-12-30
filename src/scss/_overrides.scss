@@ -59,24 +59,26 @@
     center/1em auto no-repeat;
 }
 
-.modal-content {
-  padding: 24px 48px;
-  @include bs-card;
-}
+.modal {
+  &-content {
+    padding: 24px 48px;
+    @include bs-card;
+  }
 
-.modal-title {
-  max-width: 303px;
-  width: 100%;
-}
+  &-title {
+    max-width: 303px;
+    width: 100%;
+  }
 
-.modal-header {
-  border-bottom: none;
-}
+  &-header {
+    border-bottom: none;
+  }
 
-.modal-body {
-  padding: 0;
-}
+  &-body {
+    padding: 0;
+  }
 
-.modal-footer {
-  border-top: none;
+  &-footer {
+    border-top: none;
+  }
 }
