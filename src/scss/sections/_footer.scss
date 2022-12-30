@@ -11,6 +11,10 @@
   }
 
   .form-control {
+    color: $background-color-white-clean;
+    background-color: $font-color-black;
+    border: 1px solid $background-color-white-clean;
+
     &::placeholder {
       /* Chrome, Firefox, Opera, Safari 10.1+ */
       color: var(--bs-white);

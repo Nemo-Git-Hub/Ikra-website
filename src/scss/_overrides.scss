@@ -51,7 +51,34 @@
 .form-control {
   font-size: 1.125rem;
   font-weight: 300;
-  color: $background-color-white-clean;
-  background-color: $font-color-black;
-  border: 1px solid $background-color-white-clean;
+}
+
+// MODAL
+.btn-close {
+  background: transparent url(../assets/icons/akar-icons-cross-close.svg)
+    center/1em auto no-repeat;
+}
+
+.modal {
+  &-content {
+    padding: 24px 48px;
+    @include bs-card;
+  }
+
+  &-title {
+    max-width: 303px;
+    width: 100%;
+  }
+
+  &-header {
+    border-bottom: none;
+  }
+
+  &-body {
+    padding: 0;
+  }
+
+  &-footer {
+    border-top: none;
+  }
 }

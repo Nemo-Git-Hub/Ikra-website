@@ -1,0 +1,51 @@
+.modal {
+  &-phone {
+    border: none;
+  }
+
+  &-phone::after {
+    border: none;
+  }
+
+  &-subtitle {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .form-control,
+  .dropdown-toggle {
+    padding: 1rem 1.25rem;
+  }
+
+  .form-control {
+    border: 1px solid $color-grey-light;
+  }
+
+  .dropdown-toggle {
+    position: relative;
+    border: 1px solid $color-grey-light;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 1rem;
+    }
+
+    &-phone {
+      padding: 0;
+      width: 60px;
+      border: none;
+      text-align: start;
+      &::after {
+        right: 0.25rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .modal-content {
+    width: 564px;
+  }
+}
