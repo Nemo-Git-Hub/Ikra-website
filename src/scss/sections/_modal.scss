@@ -2,8 +2,14 @@
   &-phone {
     border: none;
   }
+
   &-phone::after {
     border: none;
+  }
+
+  &-subtitle {
+    margin-top: 12px;
+    margin-bottom: 12px;
   }
 
   .form-control,

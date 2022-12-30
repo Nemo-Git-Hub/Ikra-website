@@ -77,7 +77,12 @@
             <div
               class="d-grid d-md-flex flex-wrap align-items-end gap-3 group-buttons"
             >
-              <button type="button" class="btn btn-primary text-5">
+              <button
+                type="button"
+                class="btn btn-primary text-5"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
                 Замовити по Акції
               </button>
               <button class="btn btn-outline-dark text-5">
@@ -194,6 +199,8 @@
                 <button
                   type="button"
                   class="btn btn-primary text-5 mt-4 second-page-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 >
                   Хочу отримати пропозицію
                 </button>
@@ -354,7 +361,12 @@
                 </div>
               </div>
               <p class="gilroy text-center mt-4">Залишилось банок: 5 шт.</p>
-              <button type="button" class="btn btn-primary text-5">
+              <button
+                type="button"
+                class="btn btn-primary text-5"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
                 Замовити зараз
               </button>
             </div>
@@ -435,7 +447,12 @@
                 </div>
               </div>
               <p class="gilroy text-center mt-4">Залишилось банок: 5 шт.</p>
-              <button type="button" class="btn btn-primary text-5">
+              <button
+                type="button"
+                class="btn btn-primary text-5"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
                 Замовити зараз
               </button>
             </div>
@@ -514,7 +531,12 @@
                 </div>
               </div>
               <p class="gilroy text-center mt-4">Залишилось банок: 7 шт.</p>
-              <button type="button" class="btn btn-primary text-5">
+              <button
+                type="button"
+                class="btn btn-primary text-5"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
                 Замовити зараз
               </button>
             </div>
@@ -595,7 +617,12 @@
                 </div>
               </div>
               <p class="gilroy text-center mt-4">Залишилось банок: 13 шт.</p>
-              <button type="button" class="btn btn-primary text-5">
+              <button
+                type="button"
+                class="btn btn-primary text-5"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
                 Замовити зараз
               </button>
             </div>
@@ -622,6 +649,8 @@
                 <button
                   type="button"
                   class="btn btn-primary text-5 mt-4 action-page-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 >
                   Хочу отримати пропозицію
                 </button>
@@ -987,16 +1016,6 @@
       </div>
     </footer>
 
-    <!-- Button trigger modal -->
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#exampleModal"
-    >
-      Open modal
-    </button>
-
     <div
       class="modal fade"
       id="exampleModal"
@@ -1005,8 +1024,8 @@
       aria-hidden="true"
     >
       <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header flex-column">
+        <div class="modal-content gilroy">
+          <div class="modal-header flex-column pb-0">
             <button
               type="button"
               class="btn-close"
@@ -1014,7 +1033,7 @@
               aria-label="Close"
             ></button>
             <p
-              class="modal-title fs-5 text-2 text-center text-uppercase"
+              class="modal-title century text-2 text-center text-uppercase"
               id="exampleModalLabel"
             >
               щоб зробити замовлення
@@ -1022,7 +1041,7 @@
           </div>
 
           <div class="modal-body gilroy fw-light">
-            <p class="text-center">
+            <p class="modal-subtitle text-center p-0 mt-0">
               заповніть всі поля і наш консультант з вами зв’яжеться
             </p>
             <input
@@ -1033,7 +1052,6 @@
             />
 
             <div class="form-control mt-2">
-              <!-- do not to see flag-ukraine -->
               <div class="dropdown">
                 <button
                   class="btn btn-outline dropdown-toggle dropdown-toggle-phone"
@@ -1059,7 +1077,7 @@
                 </ul>
                 <input
                   class="modal-phone"
-                  type="number"
+                  type="text"
                   placeholder="+380 (99) 999-99-99"
                   aria-label="+380 (99) 999-99-99"
                 />
@@ -1104,21 +1122,21 @@
                   data-bs-auto-close="true"
                   aria-expanded="false"
                 >
-                  Ікра горбуші
+                  1
                 </button>
 
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="#"> Ікра горбуші </a>
+                    <a class="dropdown-item" href="#"> 1 </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#"> Ікра лосося </a>
+                    <a class="dropdown-item" href="#"> 2 </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#"> Ікра кети </a>
+                    <a class="dropdown-item" href="#"> 3 </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#"> Ікра веслоноса </a>
+                    <a class="dropdown-item" href="#"> 4 </a>
                   </li>
                 </ul>
               </div>
@@ -1133,35 +1151,73 @@
                   data-bs-auto-close="true"
                   aria-expanded="false"
                 >
-                  Ікра горбуші
+                  120 г
                 </button>
 
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="#"> Ікра горбуші </a>
+                    <a class="dropdown-item" href="#"> 120 г </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#"> Ікра лосося </a>
+                    <a class="dropdown-item" href="#"> 225 г </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#"> Ікра кети </a>
+                    <a class="dropdown-item" href="#"> 500 г </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#"> Ікра веслоноса </a>
+                    <a class="dropdown-item" href="#"> 800 г </a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <button type="button" class="btn btn-primary w-100 mt-4">
-            Save changes
+          <button
+            type="button"
+            class="btn btn-primary century text-5 w-100 mt-4"
+            data-bs-target="#exampleModalToggle2"
+            data-bs-toggle="modal"
+          >
+            Зробити замовлення
           </button>
         </div>
       </div>
     </div>
 
-    <div class="control-line">control-line</div>
+    <div
+      class="modal fade"
+      id="exampleModalToggle2"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel2"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p
+              class="text-2 text-uppercase text-center w-100"
+              id="exampleModalToggleLabel2"
+            >
+              дякуємо за замовлення!
+            </p>
+          </div>
+          <div class="modal-body">
+            <p class="text-4 text-center">
+              Наш консультант зв'яжеться з Вами найближчим часом!
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              ОК
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="src/js/index.js"></script>
   </body>
