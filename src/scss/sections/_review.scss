@@ -32,20 +32,23 @@
       height: 60px;
       border-radius: 50%;
       background-position: center;
+
+      @include media-breakpoint-down(md) {
+        top: 94%;
+      }
     }
 
     &-next::after,
     &-prev::after {
       display: none;
     }
-  }
-}
 
-@include media-breakpoint-down(md) {
-  .swiper-button {
-    &-next,
+    &-next {
+      right: -30px;
+    }
+
     &-prev {
-      top: 94%;
+      left: -30px;
     }
   }
 }
