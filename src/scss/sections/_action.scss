@@ -1,6 +1,7 @@
 .action-page {
   padding-top: 100px;
   padding-bottom: 100px;
+  background-color: $color-white;
 
   &-block {
     @include media-breakpoint-down(lg) {
