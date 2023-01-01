@@ -1,3 +1,54 @@
 .review {
   padding: 100px 45px;
+  background-color: $color-white;
+}
+
+.swiper {
+  padding-bottom: 40px;
+
+  &-pagination-bullet {
+    background-color: $color-grey;
+    margin: 10px 10px;
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+
+    &-active {
+      background-color: $color-accent;
+    }
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    margin: 0px var(--swiper-pagination-bullet-horizontal-gap, 6px);
+  }
+
+  &-button {
+    &-next,
+    &-prev {
+      background-color: $color-white-clean;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-position: center;
+
+      @include media-breakpoint-down(md) {
+        top: 94%;
+      }
+    }
+
+    &-next::after,
+    &-prev::after {
+      display: none;
+    }
+
+    &-next {
+      right: -30px;
+    }
+
+    &-prev {
+      left: -30px;
+    }
+  }
 }

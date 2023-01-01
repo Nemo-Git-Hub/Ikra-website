@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Справжня ікра</title>
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="src/scss/main.scss" />
   </head>
 
@@ -712,36 +716,46 @@
       </div>
     </section>
 
-    <!-- section need to decommited after full compleat. Distorts page display.  -->
-
-    <!-- <section id="review" class="review">
+    <section id="review" class="review">
       <div class="container">
         <p class="text-2 text-uppercase text-center">відгуки наших покупців</p>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper d-flex">
-            <div class="swiper-slide">
-              <img src="src/assets/img/reviews-1.png" alt="reviews-image" />
+        <div class="position-relative">
+          <div class="swiper swiper-no-swiping">
+            <div class="swiper-wrapper text-center">
+              <div class="swiper-slide">
+                <img src="src/assets/img/reviews-1.png" alt="reviews-image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="src/assets/img/reviews-2.png" alt="reviews-image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="src/assets/img/reviews-1.png" alt="reviews-image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="src/assets/img/reviews-3.png" alt="reviews-image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="src/assets/img/reviews-4.png" alt="reviews-image" />
+              </div>
             </div>
-            <div class="swiper-slide">
-              <img src="src/assets/img/reviews-2.png" alt="reviews-image" />
-            </div>
-            <div class="swiper-slide">
-              <img src="src/assets/img/reviews-1.png" alt="reviews-image" />
-            </div>
-            <div class="swiper-slide">
-              <img src="src/assets/img/reviews-3.png" alt="reviews-image" />
-            </div>
-            <div class="swiper-slide">
-              <img src="src/assets/img/reviews-4.png" alt="reviews-image" />
-            </div>
+
+            <div class="swiper-pagination"></div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev">
+            <img
+              src="src/assets/icons/swiper-button-prev-custom.svg"
+              alt="button-prev"
+            />
+          </div>
+          <div class="swiper-button-next">
+            <img
+              src="src/assets/icons/swiper-button-next-custom.svg"
+              alt="button-next"
+            />
+          </div>
         </div>
       </div>
     </section>
-    -->
 
     <section id="faq" class="faq">
       <div class="container">
@@ -1219,6 +1233,7 @@
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="src/js/index.js"></script>
   </body>
 </html>
