@@ -38,19 +38,19 @@
           >
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Каталог</a>
+                <a class="nav-link active" href="#out-production">Каталог</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Акції</a>
+                <a class="nav-link active" href="#action-page">Акції</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Доставка</a>
+                <a class="nav-link active" href="#delivery">Доставка</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Відгуки</a>
+                <a class="nav-link active" href="#review">Відгуки</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">FAQ</a>
+                <a class="nav-link active" href="#faq">FAQ</a>
               </li>
             </ul>
             <div class="nav-item d-flex">
@@ -89,7 +89,12 @@
               >
                 Замовити по Акції
               </button>
-              <button class="btn btn-outline-dark text-5">
+              <button
+                class="btn btn-outline-dark text-5"
+                type="button"
+                data-bs-spy="scroll"
+                data-bs-target="#out-production"
+              >
                 Перейти до Каталогу
               </button>
             </div>
@@ -285,7 +290,7 @@
       </div>
     </section>
 
-    <section class="out-production">
+    <section class="out-production" id="out-production">
       <div class="container">
         <p class="text-2 text-center text-uppercase">наша продукція</p>
 
@@ -670,15 +675,10 @@
     </section>
 
     <section id="delivery" class="delivery">
-      <div class="container">
-        <div class="row ps-0">
-          <img
-            src="src/assets/img/delivery-section-img.jpg"
-            alt="delivery-section-image"
-            class="col-xl-6 d-none d-xl-block img-fluid"
-          />
-
-          <div class="col-12 col-xl-6 container d-flex flex-column mt-5">
+      <div class="row justify-content-center">
+        <div class="col-6 delivery-left"></div>
+        <div class="col-md-6 delivery-right">
+          <div class="d-flex flex-column">
             <p class="text-2 text-uppercase text-center">умови доставки</p>
             <div class="delivery-block text-center text-lg-start">
               <img src="src/assets/icons/payment.svg" alt="payment-icon" />
@@ -700,7 +700,7 @@
               </ol>
             </div>
 
-            <div class="delivery-block text-center text-lg-start mt-4 mb-5">
+            <div class="delivery-block text-center text-lg-start mt-4">
               <img
                 src="src/assets/icons/delivery-tracking.svg"
                 alt="delivery-tracking-icon"
@@ -1091,9 +1091,9 @@
                 </ul>
                 <input
                   class="modal-phone"
+                  name="phone"
+                  id="phone"
                   type="text"
-                  placeholder="+380 (99) 999-99-99"
-                  aria-label="+380 (99) 999-99-99"
                 />
               </div>
             </div>
@@ -1233,6 +1233,7 @@
       </div>
     </div>
 
+    <script src="https://unpkg.com/imask"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="src/js/index.js"></script>
   </body>
