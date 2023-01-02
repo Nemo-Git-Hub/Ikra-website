@@ -39,6 +39,7 @@
   --bs-accordion-btn-icon: url(../assets/icons/akar-icons-plus.svg);
   --bs-accordion-btn-active-icon: url(../assets/icons/akar-icons-minus.svg);
   --bs-accordion-border-width: 0px;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0rem rgba(13, 110, 253, 0.25);
 }
 
 .accordion-button:not(.collapsed) {
