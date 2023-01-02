@@ -38,19 +38,19 @@
           >
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Каталог</a>
+                <a class="nav-link active" href="#out-production">Каталог</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Акції</a>
+                <a class="nav-link active" href="#action-page">Акції</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Доставка</a>
+                <a class="nav-link active" href="#delivery">Доставка</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Відгуки</a>
+                <a class="nav-link active" href="#review">Відгуки</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">FAQ</a>
+                <a class="nav-link active" href="#faq">FAQ</a>
               </li>
             </ul>
             <div class="nav-item d-flex">
@@ -89,9 +89,11 @@
               >
                 Замовити по Акції
               </button>
-              <button class="btn btn-outline-dark text-5">
-                Перейти до Каталогу
-              </button>
+              <a href="#out-production">
+                <button class="btn btn-outline-dark text-5" type="button">
+                  Перейти до Каталогу
+                </button>
+              </a>
             </div>
           </div>
 
@@ -285,7 +287,7 @@
       </div>
     </section>
 
-    <section class="out-production">
+    <section class="out-production" id="out-production">
       <div class="container">
         <p class="text-2 text-center text-uppercase">наша продукція</p>
 
@@ -670,15 +672,10 @@
     </section>
 
     <section id="delivery" class="delivery">
-      <div class="container">
-        <div class="row ps-0">
-          <img
-            src="src/assets/img/delivery-section-img.jpg"
-            alt="delivery-section-image"
-            class="col-xl-6 d-none d-xl-block img-fluid"
-          />
-
-          <div class="col-12 col-xl-6 container d-flex flex-column mt-5">
+      <div class="row justify-content-center">
+        <div class="col-6 delivery-left"></div>
+        <div class="col-md-6 delivery-right">
+          <div class="d-flex flex-column">
             <p class="text-2 text-uppercase text-center">умови доставки</p>
             <div class="delivery-block text-center text-lg-start">
               <img src="src/assets/icons/payment.svg" alt="payment-icon" />
@@ -700,7 +697,7 @@
               </ol>
             </div>
 
-            <div class="delivery-block text-center text-lg-start mt-4 mb-5">
+            <div class="delivery-block text-center text-lg-start mt-4">
               <img
                 src="src/assets/icons/delivery-tracking.svg"
                 alt="delivery-tracking-icon"
@@ -763,135 +760,143 @@
           <p class="text-2 text-uppercase text-center">часті запитання</p>
         </div>
         <div class="row justify-content-around">
-          <div class="col-12 col-lg-5 g-3 p-2 bg-white faq-item">
-            <div class="accordion" id="accordion1">
-              <div class="accordion-item">
-                <div class="accordion-header" id="heading1">
-                  <button
-                    class="accordion-button collapsed gilroy text-4 fw-semibold"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapse1"
-                    aria-expanded="false"
-                    aria-controls="collapse1"
+          <div class="col-12 col-lg-5 g-3 p-2">
+            <div class="bg-white faq-item">
+              <div class="accordion" id="accordion1">
+                <div class="accordion-item">
+                  <div class="accordion-header" id="heading1">
+                    <button
+                      class="accordion-button collapsed gilroy text-4 fw-semibold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse1"
+                      aria-expanded="false"
+                      aria-controls="collapse1"
+                    >
+                      Чи свіжа ікра?
+                    </button>
+                  </div>
+                  <div
+                    id="collapse1"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading1"
+                    data-bs-parent="#accordion1"
                   >
-                    Чи свіжа ікра?
-                  </button>
-                </div>
-                <div
-                  id="collapse1"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="heading1"
-                  data-bs-parent="#accordion1"
-                >
-                  <div class="accordion-body gilroy fw-light">
-                    <p>
-                      Так, Постачання йдуть безпосередньо від виробника.
-                      Середній термін постачання ікри складає близько 7 днів.
-                      Саме свіжість продукту є нашою основною перевагою!
-                    </p>
+                    <div class="accordion-body gilroy fw-light">
+                      <p>
+                        Так, Постачання йдуть безпосередньо від виробника.
+                        Середній термін постачання ікри складає близько 7 днів.
+                        Саме свіжість продукту є нашою основною перевагою!
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-12 col-lg-5 g-3 p-2 bg-white faq-item">
-            <div class="accordion" id="accordion2">
-              <div class="accordion-item">
-                <div class="accordion-header" id="heading2">
-                  <button
-                    class="accordion-button collapsed gilroy text-4 fw-semibold"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapse2"
-                    aria-expanded="false"
-                    aria-controls="collapse2"
+          <div class="col-12 col-lg-5 g-3 p-2">
+            <div class="bg-white faq-item">
+              <div class="accordion" id="accordion2">
+                <div class="accordion-item">
+                  <div class="accordion-header" id="heading2">
+                    <button
+                      class="accordion-button collapsed gilroy text-4 fw-semibold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse2"
+                      aria-expanded="false"
+                      aria-controls="collapse2"
+                    >
+                      Які терміни доставлення?
+                    </button>
+                  </div>
+                  <div
+                    id="collapse2"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading2"
+                    data-bs-parent="#accordion2"
                   >
-                    Які терміни доставлення?
-                  </button>
-                </div>
-                <div
-                  id="collapse2"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="heading2"
-                  data-bs-parent="#accordion2"
-                >
-                  <div class="accordion-body gilroy fw-light">
-                    <p>
-                      Які терміни доставлення? Так, Постачання йдуть
-                      безпосередньо від виробника. Середній термін постачання
-                      ікри складає близько 7 днів. Саме свіжість продукту є
-                      нашою основною перевагою!
-                    </p>
+                    <div class="accordion-body gilroy fw-light">
+                      <p>
+                        Які терміни доставлення? Так, Постачання йдуть
+                        безпосередньо від виробника. Середній термін постачання
+                        ікри складає близько 7 днів. Саме свіжість продукту є
+                        нашою основною перевагою!
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-12 col-lg-5 g-3 p-2 bg-white faq-item">
-            <div class="accordion" id="accordion3">
-              <div class="accordion-item">
-                <div class="accordion-header" id="heading3">
-                  <button
-                    class="accordion-button collapsed gilroy text-4 fw-semibold"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapse3"
-                    aria-expanded="false"
-                    aria-controls="collapse3"
+          <div class="col-12 col-lg-5 g-3 p-2">
+            <div class="bg-white faq-item">
+              <div class="accordion" id="accordion3">
+                <div class="accordion-item">
+                  <div class="accordion-header" id="heading3">
+                    <button
+                      class="accordion-button collapsed gilroy text-4 fw-semibold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse3"
+                      aria-expanded="false"
+                      aria-controls="collapse3"
+                    >
+                      Чи проходить ікра контроль якості?
+                    </button>
+                  </div>
+                  <div
+                    id="collapse3"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading3"
+                    data-bs-parent="#accordion3"
                   >
-                    Чи проходить ікра контроль якості?
-                  </button>
-                </div>
-                <div
-                  id="collapse3"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="heading3"
-                  data-bs-parent="#accordion3"
-                >
-                  <div class="accordion-body gilroy fw-light">
-                    <p>
-                      Чи проходить ікра контроль якості? Так, Постачання йдуть
-                      безпосередньо від виробника. Середній термін постачання
-                      ікри складає близько 7 днів. Саме свіжість продукту є
-                      нашою основною перевагою!
-                    </p>
+                    <div class="accordion-body gilroy fw-light">
+                      <p>
+                        Чи проходить ікра контроль якості? Так, Постачання йдуть
+                        безпосередньо від виробника. Середній термін постачання
+                        ікри складає близько 7 днів. Саме свіжість продукту є
+                        нашою основною перевагою!
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-12 col-lg-5 g-3 p-2 bg-white faq-item">
-            <div class="accordion" id="accordion4">
-              <div class="accordion-item">
-                <div class="accordion-header" id="heading4">
-                  <button
-                    class="accordion-button collapsed gilroy text-4 fw-semibold"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapse4"
-                    aria-expanded="false"
-                    aria-controls="collapse4"
+          <div class="col-12 col-lg-5 g-3 p-2">
+            <div class="bg-white faq-item">
+              <div class="accordion" id="accordion4">
+                <div class="accordion-item">
+                  <div class="accordion-header" id="heading4">
+                    <button
+                      class="accordion-button collapsed gilroy text-4 fw-semibold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse4"
+                      aria-expanded="false"
+                      aria-controls="collapse4"
+                    >
+                      У вас є передоплата?
+                    </button>
+                  </div>
+                  <div
+                    id="collapse4"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading4"
+                    data-bs-parent="#accordion4"
                   >
-                    У вас є передоплата?
-                  </button>
-                </div>
-                <div
-                  id="collapse4"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="heading4"
-                  data-bs-parent="#accordion4"
-                >
-                  <div class="accordion-body gilroy fw-light">
-                    <p>
-                      У вас є передоплата? Так, Постачання йдуть безпосередньо
-                      від виробника. Середній термін постачання ікри складає
-                      близько 7 днів. Саме свіжість продукту є нашою основною
-                      перевагою!
-                    </p>
+                    <div class="accordion-body gilroy fw-light">
+                      <p>
+                        У вас є передоплата? Так, Постачання йдуть безпосередньо
+                        від виробника. Середній термін постачання ікри складає
+                        близько 7 днів. Саме свіжість продукту є нашою основною
+                        перевагою!
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1091,9 +1096,9 @@
                 </ul>
                 <input
                   class="modal-phone"
+                  name="phone"
+                  id="phone"
                   type="text"
-                  placeholder="+380 (99) 999-99-99"
-                  aria-label="+380 (99) 999-99-99"
                 />
               </div>
             </div>
@@ -1233,6 +1238,7 @@
       </div>
     </div>
 
+    <script src="https://unpkg.com/imask"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="src/js/index.js"></script>
   </body>
