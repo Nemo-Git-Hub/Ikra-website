@@ -1,6 +1,6 @@
-var element = document.getElementById("phone");
-var maskOptions = {
+const element = document.getElementById("phone");
+const maskOptions = {
   mask: "+380(00)000-00-00",
   lazy: false,
 };
-var mask = new IMask(element, maskOptions);
+const mask = new IMask(element, maskOptions);
