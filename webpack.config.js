@@ -1,6 +1,6 @@
 const path = require("path");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+// const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const isDev = process.env.NODE_ENV === "development";
@@ -15,7 +15,7 @@ module.exports = {
   entry: "./js/index.js",
   output: {
     filename: filename("js"),
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "docs"),
     clean: true,
   },
   devServer: {
@@ -23,7 +23,7 @@ module.exports = {
     open: true,
     hot: true,
     static: {
-      directory: path.resolve(__dirname, "dist"),
+      directory: path.resolve(__dirname, "docs"),
     },
     compress: true,
     port: 3000,
@@ -36,7 +36,7 @@ module.exports = {
         collapseWhitespace: isProd,
       },
     }),
-    new CleanWebpackPlugin(),
+    // new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: filename("css"),
     }),
