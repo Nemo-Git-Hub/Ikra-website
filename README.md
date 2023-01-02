@@ -1,4 +1,4 @@
 # website2
 
 
-https://nemo-git-hub.github.io/Ikra-website/#out-production
+https://nemo-git-hub.github.io/ikra-website/
